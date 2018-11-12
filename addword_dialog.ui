@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddWordDialog</class>
+ <widget class="QDialog" name="AddWordDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>536</width>
+    <height>147</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QRadioButton" name="radioButton_Rzeczownik">
+         <property name="text">
+          <string>Rzeczownik</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_Czasownik">
+         <property name="text">
+          <string>Czasownik</string>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_Przymiotnik">
+         <property name="text">
+          <string>Przymiotnik</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_ZlozenieSlow">
+         <property name="text">
+          <string>Złożenie słów</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_wordInPolish">
+           <property name="text">
+            <string>Słowo po polsku</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_Rodzajnik">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>55</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>55</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Rodzajnik</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_wordInGerman">
+           <property name="text">
+            <string>Słowo po niemiecku</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLineEdit" name="lineEdit_pluralWordInGerman"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="lineEdit_wordInPolish">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="lineEdit_wordInGerman"/>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_pluralWordInGerman">
+           <property name="text">
+            <string>Liczba mnoga</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="comboBox_article">
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>der</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>die</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>das</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButton_umlaut_a">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="locale">
+            <locale language="German" country="Germany"/>
+           </property>
+           <property name="text">
+            <string>ä</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_umlaut_o">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>ö</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_umlaut_u">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>ü</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_scharfes_s">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>ß</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="AddWord_Button">
+           <property name="text">
+            <string>Dodaj</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Cancel_Button">
+           <property name="text">
+            <string>Anuluj</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_wordInPolish</tabstop>
+  <tabstop>lineEdit_wordInGerman</tabstop>
+  <tabstop>lineEdit_pluralWordInGerman</tabstop>
+  <tabstop>radioButton_Czasownik</tabstop>
+  <tabstop>radioButton_Przymiotnik</tabstop>
+  <tabstop>radioButton_ZlozenieSlow</tabstop>
+  <tabstop>AddWord_Button</tabstop>
+  <tabstop>Cancel_Button</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
